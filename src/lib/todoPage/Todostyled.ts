@@ -5,11 +5,8 @@ import { styled } from "styled-components";
 export const WrapperContainer = styled.div`
   display: flex;
   height: 100vh;
-  background-image: url(https://raw.githubusercontent.com/cloworm/todo/master/public/images/bg-desktop-light.jpg);
-  background-size: 100% 300px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
+  background: url(https://raw.githubusercontent.com/cloworm/todo/master/public/images/bg-desktop-light.jpg)
+    center top / 100% 300px no-repeat fixed;
 `;
 
 export const ElementWrapper = styled.div`
@@ -112,4 +109,22 @@ export const ModalStyle = styled(Modal)`
 
 export const DraggableStyled = styled(Draggable)`
   z-index: 9999;
+`;
+
+export const ContentCard = styled.div`
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
+export const TitleContainer = styled.div`
+  flex: 1;
+  max-width: 100%;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;

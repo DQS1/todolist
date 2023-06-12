@@ -2,13 +2,15 @@ import {
   CloseCircleOutlined,
   FormOutlined,
   PlusOutlined,
+  ExclamationCircleFilled,
 } from "@ant-design/icons";
-import { Button, Form, Input, Row } from "antd";
+import { Button, Form, Input, Row, Modal } from "antd";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import {
   AddButton,
   CardStyled,
   ColStyled,
+  ContentCard,
   ElementWrapper,
   FormContainer,
   HeaderCard,
@@ -16,6 +18,7 @@ import {
   HeaderContainer,
   ModalStyle,
   SpaceStyled,
+  TitleContainer,
   WrapperContainer,
 } from "./Todostyled";
 
@@ -29,6 +32,7 @@ interface TodoList {
 
 function TodoPage() {
   const [form] = Form.useForm();
+  const { confirm } = Modal;
   const [inprogressData, setInprogressData] = useState<TodoList[]>([]);
   const [data, setData] = useState<TodoList[]>([]);
   const [doneData, setDoneData] = useState<TodoList[]>([]);
@@ -41,7 +45,6 @@ function TodoPage() {
     INPROGRESS: inprogressData,
     DONE: doneData,
   };
-
 
   const handleDelete = (index: number, colName: string) => {
     switch (colName) {
@@ -261,7 +264,7 @@ function TodoPage() {
               <Input.TextArea
                 style={{ height: 100, resize: "none" }}
                 placeholder="Input Content"
-                autoSize={{ minRows: 4, maxRows: 5 }}
+                autoSize={{ minRows: 6, maxRows: 7 }}
               />
             </Form.Item>
             <Form.Item name="status" hidden>
@@ -337,7 +340,7 @@ function TodoPage() {
                               }
                               title={
                                 <HeaderCard>
-                                  {val?.title}{" "}
+                                  <TitleContainer>{val?.title}</TitleContainer>
                                   <div>
                                     <FormOutlined
                                       onClick={() => {
@@ -350,7 +353,20 @@ function TodoPage() {
                                     />{" "}
                                     <CloseCircleOutlined
                                       onClick={() => {
-                                        handleDelete(index, "TODO");
+                                        confirm({
+                                          title:
+                                            "Are you sure delete this task?",
+                                          icon: <ExclamationCircleFilled />,
+                                          okText: "Yes",
+                                          okType: "danger",
+                                          cancelText: "No",
+                                          onOk() {
+                                            handleDelete(index, "TODO");
+                                          },
+                                          onCancel() {
+                                            console.log("Cancel");
+                                          },
+                                        });
                                       }}
                                       style={{
                                         cursor: "pointer",
@@ -362,7 +378,13 @@ function TodoPage() {
                               }
                               size="small"
                             >
-                              <p>{val?.content}</p>
+                              <ContentCard
+                                onClick={() => {
+                                  handleEdit(val, index, "TODO");
+                                }}
+                              >
+                                <p>{val?.content}</p>
+                              </ContentCard>
                             </CardStyled>
                           )}
                         </Draggable>
@@ -415,7 +437,7 @@ function TodoPage() {
                               }
                               title={
                                 <HeaderCard>
-                                  {val?.title}{" "}
+                                  <TitleContainer>{val?.title}</TitleContainer>
                                   <div>
                                     <FormOutlined
                                       onClick={() => {
@@ -428,7 +450,20 @@ function TodoPage() {
                                     />{" "}
                                     <CloseCircleOutlined
                                       onClick={() => {
-                                        handleDelete(index, "INPROGRESS");
+                                        confirm({
+                                          title:
+                                            "Are you sure delete this task?",
+                                          icon: <ExclamationCircleFilled />,
+                                          okText: "Yes",
+                                          okType: "danger",
+                                          cancelText: "No",
+                                          onOk() {
+                                            handleDelete(index, "INPROGRESS");
+                                          },
+                                          onCancel() {
+                                            console.log("Cancel");
+                                          },
+                                        });
                                       }}
                                       style={{
                                         cursor: "pointer",
@@ -440,7 +475,13 @@ function TodoPage() {
                               }
                               size="small"
                             >
-                              <p>{val?.content}</p>
+                              <ContentCard
+                                onClick={() => {
+                                  handleEdit(val, index, "INPROGRESS");
+                                }}
+                              >
+                                <p>{val?.content}</p>
+                              </ContentCard>
                             </CardStyled>
                           )}
                         </Draggable>
@@ -486,7 +527,7 @@ function TodoPage() {
                               }
                               title={
                                 <HeaderCard>
-                                  {val?.title}{" "}
+                                  <TitleContainer>{val?.title}</TitleContainer>
                                   <div>
                                     <FormOutlined
                                       onClick={() => {
@@ -499,7 +540,20 @@ function TodoPage() {
                                     />{" "}
                                     <CloseCircleOutlined
                                       onClick={() => {
-                                        handleDelete(index, "DONE");
+                                        confirm({
+                                          title:
+                                            "Are you sure delete this task?",
+                                          icon: <ExclamationCircleFilled />,
+                                          okText: "Yes",
+                                          okType: "danger",
+                                          cancelText: "No",
+                                          onOk() {
+                                            handleDelete(index, "DONE");
+                                          },
+                                          onCancel() {
+                                            console.log("Cancel");
+                                          },
+                                        });
                                       }}
                                       style={{
                                         cursor: "pointer",
@@ -511,7 +565,13 @@ function TodoPage() {
                               }
                               size="small"
                             >
-                              <p>{val?.content}</p>
+                              <ContentCard
+                                onClick={() => {
+                                  handleEdit(val, index, "DONE");
+                                }}
+                              >
+                                <p>{val?.content}</p>
+                              </ContentCard>
                             </CardStyled>
                           )}
                         </Draggable>
