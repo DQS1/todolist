@@ -55,7 +55,7 @@ export const ColStyled = styled(Col)<{ type?: string }>`
     props.type === "TODO"
       ? "#30eeff"
       : props.type === "INPROGRESS"
-      ? "#f7ff20"
+      ? "#ffd18f"
       : props.type === "DONE"
       ? "#54e676"
       : "#007bff"};
