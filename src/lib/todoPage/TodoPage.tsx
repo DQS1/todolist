@@ -235,13 +235,16 @@ function TodoPage() {
         <FormContainer>
           <Form
             form={form}
+            layout="vertical"
             onFinish={(value) => {
               handleAdd(value);
             }}
           >
             <Form.Item
+              label="Title"
               name="title"
               required={true}
+              style={{ marginBottom: 10 }}
               rules={[
                 {
                   required: true,
@@ -249,11 +252,13 @@ function TodoPage() {
                 },
               ]}
             >
-              <Input style={{ width: "50%" }} placeholder="Input Title" />
+              <Input style={{ width: "100%" }} placeholder="Input Title" />
             </Form.Item>
             <Form.Item
+              label="Content"
               name="content"
               required={true}
+              style={{ marginBottom: 12 }}
               rules={[
                 {
                   required: true,
@@ -270,9 +275,20 @@ function TodoPage() {
             <Form.Item name="status" hidden>
               <Input />
             </Form.Item>
-            <Form.Item style={{ display: "flex", justifyContent: "flex-end" }}>
+            <Form.Item
+              style={{
+                display: "flex",
+                justifyContent: "flex-end",
+                marginBottom: 12,
+              }}
+            >
               <Button
-                style={{ width: 80, marginRight: 10, background: "#9f9f9f" }}
+                style={{
+                  width: 80,
+                  marginRight: 10,
+                  background: "#9f9f9f",
+                  boxShadow: " 0 2px 0 rgb(108 108 108 / 10%)",
+                }}
                 size="middle"
                 type="primary"
                 htmlType="button"

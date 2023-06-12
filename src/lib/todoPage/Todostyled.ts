@@ -86,6 +86,7 @@ export const CardStyled = styled(Card)`
 
 export const HeaderCard = styled.div`
   display: flex;
+  font-size: large;
   justify-content: space-between;
 `;
 
