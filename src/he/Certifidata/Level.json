@@ -1,0 +1,182 @@
+[
+    {
+        "type": null,
+        "value": "692644e0-bb16-4ce6-5504-08d94863e26f",
+        "label": "Advanced",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "657d498e-cc27-416e-5510-08d94863e26f",
+        "label": "Associate",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "107e70ed-851e-4e3e-550f-08d94863e26f",
+        "label": "Basic",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "d6a87438-389b-4b47-5505-08d94863e26f",
+        "label": "Beginner",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "d87a5a04-015a-4caf-5506-08d94863e26f",
+        "label": "Essential",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "6f35170b-a698-466f-5507-08d94863e26f",
+        "label": "Expert",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "b4cba676-1e0d-4a7d-5508-08d94863e26f",
+        "label": "Foundation",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "96b71502-3bbf-4c9b-cda0-08dadef80b40",
+        "label": "Full-stack",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "0df62d73-ead1-478e-5509-08d94863e26f",
+        "label": "Fundamental",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "04f36690-921a-47d2-590c-08da5a6d862b",
+        "label": "Graduate Degree",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "b09bb5a3-36bd-4f86-550a-08d94863e26f",
+        "label": "Intermediate",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "f50798e7-bb58-41ae-70b6-08db52ba7e0d",
+        "label": "Introduction",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "bab0550b-060c-479f-5511-08d94863e26f",
+        "label": "Master",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "1e3b47ef-4e00-4301-590e-08da5a6d862b",
+        "label": "Nanodegree",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "72ed9758-6914-4f8b-550b-08d94863e26f",
+        "label": "Non-Level",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "9cd47f18-9f05-4ff6-19f9-08da972b4082",
+        "label": "Practitioner",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "ca3ca7b9-b98f-4198-550c-08d94863e26f",
+        "label": "Professional",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "9e60b22f-f83e-495e-550d-08d94863e26f",
+        "label": "Specialist",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "497e5152-e508-404b-550e-08d94863e26f",
+        "label": "Specialty",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    },
+    {
+        "type": null,
+        "value": "0a3d727e-fb3b-4413-590d-08da5a6d862b",
+        "label": "Undergraduate Degree",
+        "createdOn": null,
+        "createdBy": null,
+        "modifiedOn": null,
+        "modifiedBy": null
+    }
+]
